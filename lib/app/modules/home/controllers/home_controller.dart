@@ -5,14 +5,14 @@ import 'package:get_storage/get_storage.dart';
 class HomeController extends GetxController {
   RxBool isLoading = false.obs;
   final getStorage = GetStorage();
-  var name = '';
+  late var name = '';
 
   @override
   void onInit() {
     super.onInit();
     //error dissini jan
-    final data = getStorage.read('user') as Map<String, dynamic>;
-    name = data['username'];
+    // final data = getStorage.read('user') as Map<String, dynamic>;
+    // name = data['username'];
   }
 
   @override

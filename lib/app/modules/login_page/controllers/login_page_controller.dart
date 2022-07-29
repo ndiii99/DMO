@@ -60,6 +60,8 @@ class LoginPageController extends GetxController {
                 'username': user!.username,
                 'password': user!.password,
               });
+              print(getStorage.read('user')['username']);
+// out: GetX is the best
 
               //getStorage.read(user!.username);
               print(user!.username);
