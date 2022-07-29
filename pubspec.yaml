@@ -1,0 +1,32 @@
+name: dmo_flutter
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  geolocator: 9.0.1
+  geocoding: 2.0.4
+  shared_preferences: 2.0.15
+  http: 0.13.4
+  image_picker: 0.8.5+3
+  path_provider: 2.0.11
+  convex_bottom_bar: 3.0.0
+  intl: 0.17.0
+  get_storage: 2.0.3
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/images/LogoAPK.png
+  uses-material-design: true
+
