@@ -10,20 +10,32 @@ String userModelToJson(UserModel data) => json.encode(data.toJson());
 
 class UserModel {
   UserModel({
-    required this.username,
-    required this.password,
+    required this.nik,
+    required this.nama,
+    required this.jabatan,
+    required this.imei,
+    required this.token,
   });
 
-  String username = "";
-  String password = "";
+  String? nik;
+  String? nama;
+  String? jabatan;
+  String? imei;
+  String? token;
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-        username: json["username"],
-        password: json["password"],
+        nik: json["nik"],
+        nama: json["nama"],
+        jabatan: json["jabatan"],
+        imei: json["imei"],
+        token: json["token"],
       );
 
   Map<String, dynamic> toJson() => {
-        "username": username,
-        "password": password,
+        "nik": nik,
+        "nama": nama,
+        "jabatan": jabatan,
+        "imei": imei,
+        "token": token,
       };
 }

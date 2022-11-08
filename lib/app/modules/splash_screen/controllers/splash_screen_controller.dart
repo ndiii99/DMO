@@ -1,9 +1,10 @@
 import 'dart:async';
 
 import 'package:dmo_flutter/app/routes/app_pages.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreenController extends GetxController {
   final getStorage = GetStorage();
@@ -17,13 +18,6 @@ class SplashScreenController extends GetxController {
         Get.offAllNamed(Routes.LOGIN_PAGE);
       });
     }
-    // final prefs = await SharedPreferences.getInstance();
-    // bool login;
-    // login = prefs.getBool('login') ?? false;
-    // var _duration = Duration(seconds: 5);
-    // return Timer(_duration, () {
-    //   login ? Get.offAllNamed(Routes.HOME) : Get.offAllNamed(Routes.LOGIN_PAGE);
-    // });
   }
 
   @override
@@ -34,8 +28,8 @@ class SplashScreenController extends GetxController {
 
   @override
   void onReady() {
-    // TODO: implement onReady
     super.onReady();
+
     startTime();
   }
 

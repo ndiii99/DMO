@@ -45,6 +45,7 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<!--Image Picker-->
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Privacy - Photo Library Usage Description</string>
 	<key>NSCameraUsageDescription</key>
@@ -56,5 +57,7 @@
 	<string>This app needs access to location when open.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>This app needs access to location when in the background.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>This app needs access to use face rec</string>
 </dict>
 </plist>

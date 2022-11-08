@@ -11,12 +11,24 @@ dependencies:
   geolocator: 9.0.1
   geocoding: 2.0.4
   shared_preferences: 2.0.15
-  http: 0.13.4
+  http: 0.13.5
   image_picker: 0.8.5+3
   path_provider: 2.0.11
   convex_bottom_bar: 3.0.0
   intl: 0.17.0
   get_storage: 2.0.3
+  slide_digital_clock: 1.0.2
+  google_maps_flutter: 2.1.10
+  photo_view: 0.14.0
+  dropdown_search: 5.0.2
+  dropdown_button2: 1.7.1
+  flutter_masked_text2: 0.9.1
+  firebase_core: 1.21.0
+  firebase_messaging: 12.0.3
+  badges: 2.0.3
+  flutter_local_notifications: 9.8.0+1
+  local_auth: 2.1.2
+  camera: 0.10.0+1
   flutter: 
     sdk: flutter
 
@@ -28,5 +40,6 @@ dev_dependencies:
 flutter: 
   assets: 
     - assets/images/LogoAPK.png
+    - assets/images/logoHPS.png
   uses-material-design: true
 
